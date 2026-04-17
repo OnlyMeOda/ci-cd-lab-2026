@@ -24,6 +24,7 @@ on:
   push:
     branches: [main]   # Deploy only from main
   pull_request:         # Test + lint on all PRs
+  workflow_dispatch:
 
 jobs:
   # ─── STAGE 1: Test ─────────────────────────────────────────
