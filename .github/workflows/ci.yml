@@ -66,8 +66,8 @@ jobs:
           python-version: "3.12"
       - run: pip install ruff
       - run: ruff check .
-      - run: ruff format --check .
       - run: ruff format .
+      - run: ruff format --check .
 
   # ─── STAGE 3: Build Artifact ──────────────────────────────
   build:
