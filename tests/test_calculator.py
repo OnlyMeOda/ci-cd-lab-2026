@@ -59,10 +59,13 @@ def test_divide_by_zero_raises():
     with pytest.raises(ValueError, match="Cannot divide by zero"):
         divide(10, 0)
 
+
 # Power
+
 
 def test_power_base_zero():
     assert power(0, 1) == 0
+
 
 def test_power_by_0():
     assert power(1, 0) == 1
